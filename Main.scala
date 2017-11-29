@@ -1,7 +1,6 @@
 val fr=sc.textFile("friends_actual.txt")
 // split person and friend list by tab
 val fr1=fr.map(line => line.split("\t"))
-// why do this??
 val fr2=fr1.filter(line => (line.size==2))
 // split the friend list on ","
 val fr3=fr2.map(line => (line(0),line(1).split(",")))
